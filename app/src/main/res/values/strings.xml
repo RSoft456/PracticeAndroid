@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Assignment01</string>
+    <string name="heading">Student form data</string>
+    <string name="name">Name:&#160; &#160; &#160; &#160;Shahkar Raza</string>
+    <string name="phone">Phone:&#160; &#160; &#160; &#160;03001234567</string>
+    <string name="email">Email:&#160; &#160; &#160; &#160;Shahkar_Raza@gmail.com</string>
+    <string name="gender">Gender:&#160; &#160; &#160; &#160;Male</string>
+    <string name="department">Department:&#160; &#160; &#160; &#160;Android</string>
+    <string name="submit">Submit</string>
+    <string name="LoginText">Login Form</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragmentb">This is fragment b</string>
+    <string name="Container">Container View</string>
+    <string name="FrameLayout">Frame Layout View</string>
+    <string name="FrameLayout2">Frame Layout View 2</string>
+    <string name="FragmentA"> This is Fragment A</string>
+    <string name="FragmentB"> This is Fragment B</string>
+    <string name="ContainerFragment"> This is Container view Fragment</string>
+    <string name="ReplaceBtn">Replace Fragment</string>
+    <string name="SiWelcome">Welcome</string>
+    <string name="SiContinue">Sign In to continue</string>
+    <string name="Si">SIGN IN</string>
+    <string name="NoAcc">Don\'t have account?</string>
+    <string name="SiSu">Sign Up</string>
+    <string name="Su">SIGN UP</string>
+    <string name="SuText">Enter your data</string>
+</resources>

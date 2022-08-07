@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".assignment4.SignIn"
+    android:layout_marginTop="160dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:id="@+id/siWelcome"
+        android:text="@string/SiWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/siContinue"
+        android:text="@string/SiContinue"
+        android:layout_below="@id/siWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/siEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/siContinue"
+        android:layout_marginTop="50dp"
+        android:hint="Email"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/siPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/siEmail"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/si"
+        android:layout_marginTop="40dp"
+        android:text="@string/Si"
+        android:textSize="20sp"
+        android:backgroundTint="@color/black"
+        android:layout_below="@id/siPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/si"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:id="@+id/noAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NoAcc" />
+
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/noAcc"
+            android:id="@+id/siSu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/SiSu" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
