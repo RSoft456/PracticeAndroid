@@ -20,6 +20,7 @@ public class SignIn extends AppCompatActivity {
     Button signInBtn;
     EditText email, password;
     TextView signUpText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,15 +42,14 @@ public class SignIn extends AppCompatActivity {
                 if (!MAIL.equals("")) {
                     if (!PASSWORD.equals("")) {
                         if (MAIL.equals(Constants.firstTeacheremail) || MAIL.equals(Constants.secondTeacheremail) || MAIL.equals(Constants.studentEmail)) {
-                           if((MAIL.equals(Constants.firstTeacheremail) && PASSWORD.equals(Constants.firstTeacheremail)) || (MAIL.equals(Constants.secondTeacheremail) && PASSWORD.equals(Constants.secondTeacherpassowrd)) ||(MAIL.equals(Constants.studentEmail) && PASSWORD.equals(Constants.studentPassowrd))){
-                               Intent intent = new Intent(SignIn.this, DataListFragment.class);
-                               intent.putExtra("Email1", MAIL);
-                               startActivity(intent);
-                           }
-                           else{
-                               Toast toast = Toast.makeText(SignIn.this, "Invalid Password", Toast.LENGTH_LONG);
-                               toast.show();
-                           }
+                            if ((MAIL.equals(Constants.firstTeacheremail) && PASSWORD.equals(Constants.firstTeacherpassowrd)) || (MAIL.equals(Constants.secondTeacheremail) && PASSWORD.equals(Constants.secondTeacherpassowrd)) || (MAIL.equals(Constants.studentEmail) && PASSWORD.equals(Constants.studentPassowrd))) {
+                                Intent intent = new Intent(SignIn.this, DataListFragment.class);
+                                intent.putExtra("Email1", MAIL);
+                                startActivity(intent);
+                            } else {
+                                Toast toast = Toast.makeText(SignIn.this, "Invalid Password", Toast.LENGTH_LONG);
+                                toast.show();
+                            }
                         } else {
                             Toast toast = Toast.makeText(SignIn.this, "Invalid Email", Toast.LENGTH_LONG);
                             toast.show();

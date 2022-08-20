@@ -44,13 +44,18 @@ public class SignUp extends AppCompatActivity {
                         if (!PHONE.equals("")) {
                             if (!PASS.equals("")) {
                                 if (!REPASS.equals("")) {
-                                    Constants.studentName = NAME;
-                                    Constants.studentEmail = EMAIL;
-                                    Constants.studentphone = PHONE;
-                                    Constants.studentPassowrd = PASS;
-                                    Toast toast = Toast.makeText(SignUp.this, "Signup complete ", Toast.LENGTH_LONG);
-                                    toast.show();
-                                    finish();
+                                    if (PASS.equals(REPASS)) {
+                                        Constants.studentName = NAME;
+                                        Constants.studentEmail = EMAIL;
+                                        Constants.studentphone = PHONE;
+                                        Constants.studentPassowrd = PASS;
+                                        Toast toast = Toast.makeText(SignUp.this, "Signup complete ", Toast.LENGTH_LONG);
+                                        toast.show();
+                                        finish();
+                                    } else {
+                                        Toast toast = Toast.makeText(SignUp.this, "Passwords unmatched", Toast.LENGTH_LONG);
+                                        toast.show();
+                                    }
                                 } else {
                                     Toast toast = Toast.makeText(SignUp.this, "Please re-enter Password", Toast.LENGTH_LONG);
                                     toast.show();
