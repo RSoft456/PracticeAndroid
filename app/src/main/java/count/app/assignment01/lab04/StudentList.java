@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -22,17 +23,29 @@ public class StudentList extends AppCompatActivity {
         stutext= findViewById(R.id.stuTxt);
         recycleview=findViewById(R.id.RecyclerView);
         //arraylist=initStudentList();
+
+
+
         arraylist=initStudentListParametrised();
         initRecyclerView();
+
     }
     private void initRecyclerView(){
         RecyclerViewAdapter RVadapter = new RecyclerViewAdapter();
         recycleview.setAdapter(RVadapter);
-
+        RVadapter.setStudentInterface(new StudentInterface() {
+            @Override
+            public void setStudentOnclick(Student student) {
+                Toast toast = Toast.makeText(StudentList.this, "Name is: " + student.getName(), Toast.LENGTH_LONG);
+               toast.show();
+            }
+        });
         //datat kese jara hai ye layout btana hai define krna hai layout list hai grid hai etc
         //tells recycler about how the datat is going to be visualised
         recycleview.setLayoutManager(new LinearLayoutManager(this));
+
         RVadapter.setData(arraylist);
+
     }
     private ArrayList<Student> initStudentList(){
         ArrayList<Student> studentArrayList = new ArrayList<>();
@@ -76,4 +89,11 @@ public class StudentList extends AppCompatActivity {
 
         return studentArrayList;
     }
+
+//Interface implemented
+//    @Override
+//    public void setStudentOnclick() {
+//        Toast toast = Toast.makeText(view.getContext(), "Name is: " + item.getName(), Toast.LENGTH_LONG);
+//        toast.show();
+//    }
 }

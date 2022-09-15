@@ -9,7 +9,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.text.BreakIterator;
 import java.util.ArrayList;
 
 import count.app.assignment01.R;
@@ -17,6 +16,13 @@ import count.app.assignment01.R;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     //initializing because methods are created first time and they need a list and its size as well
     ArrayList<Student> studentArrayList = new ArrayList<>();
+
+    StudentInterface studentInterface;
+    //because we want to attach student adapter eith interface
+    public void setStudentInterface(StudentInterface studentInterface){
+        this.studentInterface=studentInterface;
+    }
+
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -31,11 +37,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         StudentViewHolder ViewHolder= (StudentViewHolder) holder;
         ViewHolder.stutextview.setText(item.getName());
         ViewHolder.phone.setText(item.getPhone());
+
         ViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast = Toast.makeText(view.getContext(), "Name is: " + item.getName(), Toast.LENGTH_LONG);
-                toast.show();
+                //enable interface
+                studentInterface.setStudentOnclick(item);
+//                Toast toast = Toast.makeText(view.getContext(), "Name is: " + item.getName(), Toast.LENGTH_LONG);
+//                toast.show();
             }
         });
 

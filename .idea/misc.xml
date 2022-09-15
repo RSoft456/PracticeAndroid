@@ -3,14 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.2265" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/drawable/bg_form.xml" value="0.154" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/drawable/bg_form_bg.xml" value="0.154" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/drawable/border.xml" value="0.154" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/drawable/ic_launcher_background.xml" value="0.154" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_custom_builder.xml" value="0.17552083333333332" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_data_list_fragment.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_dialog_builedr.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_drawer.xml" value="0.22826086956521738" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_frame_layout_view.xml" value="0.1796875" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_insert_student.xml" value="0.1796875" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_shared_preference.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_sign_in.xml" value="0.1796875" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_sign_up.xml" value="0.1796875" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_student_list.xml" value="0.14130434782608695" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_tool_bar.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/activity_view_pager.xml" value="0.1796875" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/custombuilderlayout.xml" value="0.17447916666666666" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/fragment_a2.xml" value="0.165625" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/fragment_b2.xml" value="0.165625" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/fragment_c.xml" value="0.165625" />
@@ -19,7 +29,11 @@
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/fragment_student_b.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/fragment_students.xml" value="0.4466666666666667" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/fragment_subject.xml" value="0.4466666666666667" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/nav_header.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/navigation_menu.xml" value="0.22826086956521738" />
         <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/layout/student_item.xml" value="0.14130434782608695" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/menu/main_menu.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/Assignment01/app/src/main/res/menu/navigation_menu.xml" value="0.25" />
         <entry key="..\:/Assignment01/app/src/main/res/drawable/bg_form.xml" value="0.1965" />
         <entry key="..\:/Assignment01/app/src/main/res/drawable/bg_form_bg.xml" value="0.1965" />
         <entry key="..\:/Assignment01/app/src/main/res/layout/activity_button_page.xml" value="0.20416666666666666" />

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".builder.CustomBuilder">
+
+    <ImageView
+        android:id="@+id/CDimageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/red"
+        app:srcCompat="@android:drawable/btn_dialog" />
+    <TextView
+        android:id="@+id/CDTExt"
+        android:layout_below="@id/CDimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure want to Delete this"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/CDBtn"
+        android:layout_below="@id/CDTExt"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/red"
+        android:layout_height="wrap_content"
+        android:text="OK"/>
+</RelativeLayout>

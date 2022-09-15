@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sharedpreference.SharedPreferenceActivity"
+    android:orientation="horizontal"
+    android:layout_margin="20dp">
+    <EditText
+        android:layout_marginTop="250dp"
+        android:id="@+id/SharedUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName:"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/SharedUserName"
+        android:id="@+id/SharedPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password:"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/SharedPassword"
+        android:id="@+id/SharedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_marginTop="10px"
+        android:textSize="20sp"
+        android:layout_below="@id/SharedButton"
+        android:id="@+id/SharedPrefData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data"/>
+
+</RelativeLayout>
